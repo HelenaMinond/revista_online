@@ -11,9 +11,20 @@ body {
   font-family: monospace;
 }
 
+.menu__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.newsletter__contenido h2 {
+  font-size: 1.5rem;
+}
+
+.newsletter__group input, .newsletter__group button {
+  font-size: 0.8rem;
+}
+
 .footer {
-  width: 960px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -27,26 +38,11 @@ main {
   grid-template-columns: 3fr 1fr;
 }
 
-.contenido {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.noticias {
-  width: 700px;
-  float: left;
-}
-
 .noticias__nota {
-  width: 210px;
+  width: 13rem;
   display: inline-block;
-  margin: 5px;
+  margin: 0.3rem;
   cursor: pointer;
-}
-
-.noticias__nota--cuerpo img {
-  width: 210px;
-  height: 300px;
 }
 
 .noticias__nota--cuerpo p {
@@ -54,13 +50,8 @@ main {
 }
 
 /*--------------------------------------*/
-.informacion {
-  width: 220px;
-  float: right;
-}
-
 .informacion__cabecera {
-  width: 220px;
+  text-align: justify;
   border-bottom: 1px solid gray;
 }
 
@@ -69,48 +60,36 @@ main {
 }
 
 .informacion__tags ul {
-  padding: 0;
   list-style: none;
 }
 
 .informacion__tags ul li {
+  display: inline;
   padding: 2px 4px;
   background-color: steelblue;
   margin-right: 1px;
   color: white;
 }
 
-.informacion__destacados {
-  margin-bottom: 50px;
-}
-
-.informacion__destacados--item img {
-  width: 220px;
-  height: 200px;
-}
-
 .menu {
-  width: 960px;
-  padding: 10px;
   border-bottom: 1px solid gray;
 }
 
 .menu__logo {
-  font-size: 24px;
-  font-weight: bold;
   text-transform: uppercase;
-  display: inline-block;
 }
 
 .menu__nav {
-  display: inline-block;
-  width: 840px;
   text-align: right;
 }
 
+.menu__nav ul li {
+  display: inline;
+}
+
 .menu__nav--link {
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .menu__nav--input {
@@ -118,23 +97,13 @@ main {
 }
 
 .newsletter {
-  width: 960px;
   background-color: #f2f4f5;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.newsletter__contenido h2 {
-  font-size: 24px;
 }
 
 .newsletter__group input,
 .newsletter__group button {
-  display: inline-block;
   border-width: 0;
-  font-size: 13px;
-  padding: 5px 10px;
 }
 
 .newsletter__group button {
