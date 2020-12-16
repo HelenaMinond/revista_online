@@ -7,10 +7,24 @@ body, nav, main, section, aside, footer, a, p, h1, h2, h4, ul, li {
   margin: 0;
 }
 
+body {
+  font-family: monospace;
+}
+
 .footer {
   width: 960px;
   margin: 0 auto;
   text-align: center;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 6fr 60fr 10fr 2fr;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .contenido {
