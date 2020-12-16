@@ -1,16 +1,22 @@
+/*_reset - base*/
 * {
     box-sizing: border-box;
 }
 
+/*_base - base*/
 body {
     font-family: monospace;
 }
 
+/*_base - base* (agregada a body)*/
 .contenedor {
     width: 960px;
     margin: 0 auto;
 }
 
+
+
+/*comienzo _navigation - layout*/
 .menu {
     width: 960px;
     padding: 10px;
@@ -30,8 +36,6 @@ body {
     text-align: right;
 }
 
-
-
 .nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -40,7 +44,11 @@ body {
 .input-menu {
     border-radius: 30px;
 }
+/*termino _navigation - layout*/
 
+
+
+/*inicio _main:section - layout*/
 .contenido {
     width: 960px;
     margin: 0 auto;
@@ -66,7 +74,10 @@ body {
 .cuerpo p {
     padding: 5px 10px;
 }
+/*termino _main:section - layout*/
 
+
+/*comienzo _main:aside - layout*/
 .listado-izquierdo {
     width: 220px;
     float: right;
@@ -101,8 +112,11 @@ body {
     width: 220px;
     height: 200px;
 }
+/*termino _main:aside - layout*/
 
 
+
+/*comienzo _section - layout*/
 .newsletter {
     width: 960px;
     background-color: #f2f4f5;
@@ -128,9 +142,14 @@ body {
     background-color: coral;
     color: white;
 }
+/*termino _section - layout*/
 
+
+
+/*comienzo _footer - layout*/
 .footer {
     width: 960px;
     margin: 0 auto;
     text-align: center;
 }
+/*termino _footer - layout*/
