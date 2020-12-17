@@ -1,9 +1,112 @@
-body {
-    display: grid;
-    grid-template-rows: 6fr 60fr 10fr 2fr;
+//body {
+    //display: grid;
+    //grid-template-rows: 6fr 60fr 10fr 2fr;
+//}
+
+//@extend {
+    //display: grid;
+    //grid-template-columns: 3fr 1fr;
+//}
+
+//Extra small and small devices
+@media only screen and (max-width: 767.98px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    //Etiqueta nav - barra de navegación
+    .menu {
+        border-bottom: 1px solid gray;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        padding: .5rem;
+    }
+    
+    .menu__logo {
+        text-transform: uppercase;
+    }
+
+    .menu__nav ul {
+        list-style: none;
+    }
+
+    .menu__nav ul li {
+        display: inline;
+    }
+    
+    .menu__nav--link {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline;
+    }
+    
+    .menu__nav--input {
+        border-radius: 30px;
+        display: inline;
+        width: 8rem;
+    }
+
+    .link {
+        display: none;
+    }
+
+    //Etiqueta main - contenido
+
+        //Etiqueta section - noticias
+
+        .noticias__nota {
+            width: 13rem;
+            display: inline-block;
+            margin: 0.3rem;
+            cursor: pointer;
+        }
+
+        .noticias__nota--cuerpo p {
+            padding: 5px 10px;
+        }
+
+        //Etiqueta aside - informacion
+
+        .informacion__cabecera {
+            text-align: justify;
+            border-bottom: 1px solid gray;
+        }
+
+        .informacion__tags {
+            border-bottom: 1px solid gray;
+        }
+
+        .informacion__tags ul {
+            list-style: none;
+        }
+
+        .informacion__tags ul li {
+            display: inline;
+            padding: 2px 4px;
+            background-color: steelblue;
+            margin-right: 1px;
+            color: white;
+        }
+
+
+
+}   
+
+
+
+
+//Medium, large and extra large devices
+@media only screen and (min-width: 768px) {
+
+
 }
 
-main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
