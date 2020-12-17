@@ -61,44 +61,69 @@
 
     //Etiqueta main - contenido
 
+    .contenido {
+        margin: 4rem .5rem .5rem .5rem;
+    }
+
         //Etiqueta section - noticias
 
         .noticias__nota {
-            width: 13rem;
-            display: inline-block;
-            margin: 0.3rem;
             cursor: pointer;
         }
 
+        .noticias__nota--cuerpo img {
+            width: 100vw;
+            height: 40vh;
+            margin-top: 1rem;
+        }
+
         .noticias__nota--cuerpo p {
-            padding: 5px 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
         }
 
         //Etiqueta aside - informacion
 
-        .informacion__cabecera {
-            text-align: justify;
-            border-bottom: 1px solid gray;
+        .informacion {
+            display: none;
         }
 
-        .informacion__tags {
-            border-bottom: 1px solid gray;
-        }
+    //Etiqueta section - newsletter
+    .newsletter {
+        background-color: #f2f4f5;
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .newsletter__contenido h1 {
+        line-height: 1;
+    }
+    .newsletter__contenido p {
+        margin: 2rem 0 1rem 0;
+    }
+    
+    .newsletter__group input,
+    .newsletter__group button {
+        border-width: 0;
+        height: 2rem;
+    }
+    .newsletter__group input {
+        width: 14rem;
+    }
+    .newsletter__group button {
+        width: 7rem;
+    }
+    
+    .newsletter__group button {
+        background-color: coral;
+        color: white;
+    }
 
-        .informacion__tags ul {
-            list-style: none;
-        }
-
-        .informacion__tags ul li {
-            display: inline;
-            padding: 2px 4px;
-            background-color: steelblue;
-            margin-right: 1px;
-            color: white;
-        }
-
-
-
+    //Etiqueta footer - footer
+    .footer {
+        text-align: center;
+        margin: 1rem 0 4rem 0;
+    }
 }   
 
 
