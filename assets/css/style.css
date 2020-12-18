@@ -256,11 +256,11 @@ body, body * {
   }
 
   .informacion__tags ul li {
-    display: inline;
-    padding: 2px 4px;
+    display: inline-block;
     background-color: steelblue;
-    margin-right: 1px;
     color: white;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
   }
 
   .informacion__destacados--item {
