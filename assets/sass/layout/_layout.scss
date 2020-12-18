@@ -189,7 +189,7 @@
         .noticias{
             display: grid;
             grid-template-columns: repeat(3, auto);
-            grid-gap: 1rem;
+            grid-column-gap: 1rem;
         }
         .noticias__nota {
             cursor: pointer;
@@ -201,6 +201,7 @@
 
         .noticias__nota--cuerpo img {
             width: 100%;
+            height: 70vh;
         }
 
         .noticias__nota--cuerpo p {
@@ -250,6 +251,7 @@
 
         .informacion__destacados--item img{
             width: 100%;
+            height: 40vh;
         }
 
     //Etiqueta section - newsletter
@@ -259,9 +261,7 @@
         padding-top: 4rem;
         padding-bottom: 2rem;
     }
-    .newsletter__contenido h1 {
-        line-height: 1;
-    }
+    
     .newsletter__contenido p {
         margin: 2rem 0 1rem 0;
     }
@@ -286,7 +286,7 @@
     //Etiqueta footer - footer
     .footer {
         text-align: center;
-        margin: 1rem 0 4rem 0;
+        margin: 1rem 0;
     }
 }
 
