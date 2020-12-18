@@ -60,13 +60,11 @@
     }
 
     //Etiqueta main - contenido
-
     .contenido {
         margin: 4rem .5rem .5rem .5rem;
     }
 
         //Etiqueta section - noticias
-
         .noticias__nota {
             cursor: pointer;
         }
@@ -83,7 +81,6 @@
         }
 
         //Etiqueta aside - informacion
-
         .informacion {
             display: none;
         }
@@ -95,9 +92,11 @@
         padding-top: 4rem;
         padding-bottom: 2rem;
     }
+
     .newsletter__contenido h1 {
         line-height: 1;
     }
+
     .newsletter__contenido p {
         margin: 2rem 0 1rem 0;
     }
@@ -107,9 +106,11 @@
         border-width: 0;
         height: 2rem;
     }
+
     .newsletter__group input {
         width: 14rem;
     }
+
     .newsletter__group button {
         width: 7rem;
     }
@@ -136,6 +137,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
+        line-height: 1;
     }
 
     //Etiqueta nav - barra de navegación
@@ -175,34 +177,79 @@
         display: block;
     }
     
-
     //Etiqueta main - contenido
-
-    .contenido {
-        margin: 4rem .5rem .5rem .5rem;
+    .contenido{
+        display: grid;
+        grid-template-columns: 3fr 1.1fr;
+        grid-gap: 1rem;
+        margin: 5rem 4rem 3rem 4rem;
     }
-
+    
         //Etiqueta section - noticias
-
+        .noticias{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 1rem;
+        }
         .noticias__nota {
             cursor: pointer;
         }
 
-        .noticias__nota--cuerpo img {
-            width: 100vw;
-            height: 40vh;
-            margin-top: 1rem;
-        }
-
-        .noticias__nota--cuerpo p {
-            padding: 1rem;
+        .noticias__nota--cabecera h2 {
             margin-bottom: 1rem;
         }
 
-        //Etiqueta aside - informacion
+        .noticias__nota--cuerpo img {
+            width: 100%;
+        }
 
+        .noticias__nota--cuerpo p {
+            text-align: justify;
+            margin-top: 1rem;
+        }
+
+        //Etiqueta aside - informacion
         .informacion {
-            display: none;
+            margin-left: 2rem;
+        }
+
+        .informacion__cabecera {
+            border-bottom: 1px solid gray;
+        }
+
+        .informacion__cabecera p{
+            margin: 1rem 0;
+        }
+
+        .informacion__tags {
+            border-bottom: 1px solid gray;
+            margin: 1rem 0;
+        }
+
+        .informacion__tags ul {
+            list-style: none;
+            text-align: right;
+            margin: 1rem;
+        }
+
+        .informacion__tags ul li {
+            display: inline;
+            padding: 2px 4px;
+            background-color: steelblue;
+            margin-right: 1px;
+            color: white;
+        }
+
+        .informacion__destacados--item {
+            margin-top: 1rem;
+        }
+
+        .informacion__destacados--item h4{
+            margin-bottom: 1rem;
+        }
+
+        .informacion__destacados--item img{
+            width: 100%;
         }
 
     //Etiqueta section - newsletter

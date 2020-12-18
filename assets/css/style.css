@@ -25,6 +25,24 @@ body, body * {
   font-weight: normal;
 }
 
+@media only screen and (min-width: 768px) {
+  .noticias__nota--cabecera h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .noticias__nota--cuerpo p {
+    font-size: 0.9rem;
+  }
+
+  .informacion__cabecera p {
+    font-size: 0.9rem;
+  }
+
+  .informacion__destacados--item h4 {
+    font-size: 0.9rem;
+  }
+}
 @media only screen and (max-width: 767.98px) {
   body {
     display: grid;
@@ -140,6 +158,7 @@ body, body * {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
+    line-height: 1;
   }
 
   .menu {
@@ -179,26 +198,76 @@ body, body * {
   }
 
   .contenido {
-    margin: 4rem 0.5rem 0.5rem 0.5rem;
+    display: grid;
+    grid-template-columns: 3fr 1.1fr;
+    grid-gap: 1rem;
+    margin: 5rem 4rem 3rem 4rem;
+  }
+
+  .noticias {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
   }
 
   .noticias__nota {
     cursor: pointer;
   }
 
-  .noticias__nota--cuerpo img {
-    width: 100vw;
-    height: 40vh;
-    margin-top: 1rem;
-  }
-
-  .noticias__nota--cuerpo p {
-    padding: 1rem;
+  .noticias__nota--cabecera h2 {
     margin-bottom: 1rem;
   }
 
+  .noticias__nota--cuerpo img {
+    width: 100%;
+  }
+
+  .noticias__nota--cuerpo p {
+    text-align: justify;
+    margin-top: 1rem;
+  }
+
   .informacion {
-    display: none;
+    margin-left: 2rem;
+  }
+
+  .informacion__cabecera {
+    border-bottom: 1px solid gray;
+  }
+
+  .informacion__cabecera p {
+    margin: 1rem 0;
+  }
+
+  .informacion__tags {
+    border-bottom: 1px solid gray;
+    margin: 1rem 0;
+  }
+
+  .informacion__tags ul {
+    list-style: none;
+    text-align: right;
+    margin: 1rem;
+  }
+
+  .informacion__tags ul li {
+    display: inline;
+    padding: 2px 4px;
+    background-color: steelblue;
+    margin-right: 1px;
+    color: white;
+  }
+
+  .informacion__destacados--item {
+    margin-top: 1rem;
+  }
+
+  .informacion__destacados--item h4 {
+    margin-bottom: 1rem;
+  }
+
+  .informacion__destacados--item img {
+    width: 100%;
   }
 
   .newsletter {

@@ -15,3 +15,27 @@ body, body *{
     font-size: 1rem;
     font-weight: normal;
 }
+
+
+
+
+//Medium, large and extra large devices
+@media only screen and (min-width: 768px) {
+
+    .noticias__nota--cabecera h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .noticias__nota--cuerpo p {
+        font-size: .9rem;
+    }
+
+    .informacion__cabecera p{
+        font-size: .9rem;
+    }
+
+    .informacion__destacados--item h4{
+        font-size: .9rem;
+    }
+}
