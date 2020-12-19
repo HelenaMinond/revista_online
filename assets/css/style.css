@@ -119,8 +119,7 @@ body, body * {
   .newsletter {
     background-color: #f2f4f5;
     text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding: 4rem 1rem 2rem 1rem;
   }
 
   .newsletter__contenido h1 {
@@ -138,7 +137,7 @@ body, body * {
   }
 
   .newsletter__group input {
-    width: 14rem;
+    width: 12rem;
   }
 
   .newsletter__group button {
